@@ -63,4 +63,10 @@ var x = setInterval(function() {
 		<input type="submit" value="Submit"/>
 		</form>
 	</body>
+	<script>
+	history.pushState(null, null, document.URL);
+window.addEventListener('popstate', function () {
+    history.pushState(null, null, document.URL);
+});
+	</script>
 </html>
