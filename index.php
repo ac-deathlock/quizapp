@@ -1,4 +1,9 @@
-<?php include("navbar.php")?>
+<?php include("navbar.php");
+if(isset($_SESSION["ID"]))
+		{
+			header('Location:home.php');
+		}
+?>
 <?php
 //error_reporting(1);
 	if($_SERVER["REQUEST_METHOD"]=="POST")
@@ -11,6 +16,7 @@
 					if($result=mysqli_fetch_array($rs))
 					{
 						$_SESSION["ID"]=$username;
+						$_SESSION["NAME"]=$result["name"];
 						//echo $result;
 						header('Location:home.php');
 					}
@@ -44,3 +50,4 @@
 		</form>
 		<input type="button" value="Register" onclick="document.location.href='register.php';"/>
 	</body>
+</html>

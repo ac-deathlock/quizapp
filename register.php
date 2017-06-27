@@ -1,4 +1,9 @@
-<?php include("navbar.php")?>
+<?php include("navbar.php");
+	if(isset($_SESSION["ID"]))
+		{
+			header('Location:home.php');
+		}
+?>
 <?php
 //error_reporting(1);
 	if($_SERVER["REQUEST_METHOD"]=="POST")
@@ -63,3 +68,4 @@
 		</form>
 		<input type="button" value="Home" onclick="document.location.href='index.php';"/>
 	</body>
+</html>
