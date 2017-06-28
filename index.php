@@ -32,22 +32,30 @@ if(isset($_SESSION["ID"]))
 			<title>Quiz</title>
 		</head>
 	<body>
-		<form method="post" name="login" action="">
-		<table>
+
+	<div class="container">
+	<h2>Welcome to Mock Quiz</h1>
+	<h4>Please login or Register to Continue</h2>
+		<div class="well">
+  
+		<form method="post">
+		<table class="table table-striped table-hover">
 			<tr>
-				<td>Email:</td>
-				<td><input type="email" name="email"/></td>
+				<td class="lead">Email:</td>
+				<td><input class="form-control" type="email" name="email"/></td>
 			</tr>
 			<tr>
-				<td>Password:</td>
-				<td><input type="password" name="pass"/></td>
+				<td class="lead">Password:</td>
+				<td><input class="form-control" type="password" name="pass"/></td>
 			</tr>
 			<tr>
-				<td><input type="submit" value="Login"/></td>
-				<td><input type="reset" value="Cancel"/></td>
+				<td><input type="submit" value="Login"/>   <input type="reset" value="Cancel"/></td>
+				<td></td>
 			</tr>
 		</table>
 		</form>
 		<input type="button" value="Register" onclick="document.location.href='register.php';"/>
+		</div>
+	</div>
 	</body>
 </html>

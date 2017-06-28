@@ -6,19 +6,21 @@
 ?>
 <!DOCTYPE html>
 <html>
-		<head>
-			<title>Quiz</title>
-		</head>
+<head>
+	<title>Quiz</title>
+</head>
 	<body>
-		<p>Welcome to quizApp.Read the instructions carefully.<br/>
+		<div class="container">
+		<h1>Welcome to quizApp.Read the instructions carefully.</h1><br/>
 		<ul>
-			<li>Time is 5 min.</li>
-			<li>Correct answer is 1 marks.</li>
-			<li>All questions compulsory.</li>
-			<li>No negative marking.</li>
-			<li>All the best!</li>
+			<li class="lead">Time is 5 min.</li>
+			<li class="lead">Correct answer is 1 marks.</li>
+			<li class="lead">All questions compulsory.</li>
+			<li class="lead">No negative marking.</li>
+			<li class="lead">All the best!</li>
 		</ul>
 		</p>
 		<input type="button" value="Start quiz" onclick="document.location.href='quiz.php';"/>
+		</div>
 	</body>
 </html>

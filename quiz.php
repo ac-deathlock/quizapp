@@ -41,20 +41,21 @@ var x = setInterval(function() {
 }, 1000);
 </script>
 	<body>
+	<div class="container">
 		<p id="demo"></p>
-		<form method="post" id="login" name="login" action="submit.php">
+		<form class="form-horizontal" method="post" id="login" name="login" action="submit.php">
 		<?php
 		$c=0;
 		while ($show = mysqli_fetch_array($result)){
 			
 			echo '<div>
-			<p>'.$show[1].' ?</p>
+			<p>Q. '.$show[1].' ?</p>
 			<p>
 			<input type="radio" name="ques'.$c.'" value="0" hidden="true" checked />
-			<input type="radio" name="ques'.$c.'" value="a" required/>'.$show[2].'<br/>
-			<input type="radio" name="ques'.$c.'" value="b"/>'.$show[3].'<br/>
-			<input type="radio" name="ques'.$c.'" value="c"/>'.$show[4].'<br/>
-			<input type="radio" name="ques'.$c.'" value="d"/>'.$show[5].'<br/>
+			<input type="radio" name="ques'.$c.'" value="a" required/> '.$show[2].'<br/>
+			<input type="radio" name="ques'.$c.'" value="b"/> '.$show[3].'<br/>
+			<input type="radio" name="ques'.$c.'" value="c"/> '.$show[4].'<br/>
+			<input type="radio" name="ques'.$c.'" value="d"/> '.$show[5].'<br/>
 			</p>
 			</div><hr/>';
 		$c++;
@@ -62,6 +63,7 @@ var x = setInterval(function() {
 		?>
 		<input type="submit" value="Submit"/>
 		</form>
+	</div>
 	</body>
 	<script>
 	history.pushState(null, null, document.URL);

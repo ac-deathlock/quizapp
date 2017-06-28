@@ -42,30 +42,35 @@
 				</script>
 		</head>
 	<body>
+	<div class="container">
+	<h2>Register</h2>
+		<div class="well">
 		<form method="post" name="register" action="">
-		<table>
+		<table class="table table-striped table-hover">
 			<tr>
-				<td>Email:</td>
-				<td><input type="email" name="email"/></td>
+				<td class="lead">Email:</td>
+				<td><input class="form-control" type="email" name="email"/></td>
 			</tr>
 			<tr>
-				<td>Name:</td>
-				<td><input type="text" name="name"/></td>
+				<td class="lead">Name:</td>
+				<td><input class="form-control" type="text" name="name"/></td>
 			</tr>
 			<tr>
-				<td>Password:</td>
-				<td><input type="password" name="pass"/></td>
+				<td class="lead">Password:</td>
+				<td><input class="form-control" type="password" name="pass"/></td>
 			</tr>
 			<tr>
-				<td>Confirm Password:</td>
-				<td><input type="password" name="cpass"/></td>
+				<td class="lead">Confirm Password:</td>
+				<td><input class="form-control" type="password" name="cpass"/></td>
 			</tr>
 			<tr>
-				<td><input type="submit" value="Register"/></td>
-				<td><input type="reset" value="Clear"/></td>
+				<td><input type="submit" value="Register"/>   <input type="reset" value="Clear"/></td>
+				<td></td>
 			</tr>
 		</table>
 		</form>
 		<input type="button" value="Home" onclick="document.location.href='index.php';"/>
+		</div>
+		</div>
 	</body>
 </html>

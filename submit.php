@@ -30,28 +30,39 @@
 			<title>Quiz</title>
 		</head>
 	<body>
-		<table>
-			<tr>
-				<td>Email:</td>
-				<td><?php echo $_SESSION["ID"];?></td>
-			</tr>
-			<tr>
-				<td>Name:</td>
-				<td><?php echo $_SESSION["NAME"];?></td>
-			</tr>
-			<tr>
-				<td>Correct:</td>
-				<td><?php echo $cor;?></td>
-			</tr>
-			<tr>
-				<td>Wrong:</td>
-				<td><?php echo $wrng;?></td>
-			</tr>
-			<tr>
-				<td>Total:</td>
-				<td><?php echo $cor;?></td>
-			</tr>
-		</table>
+	<div class="container">
+		<div class="panel panel-success">
+		  <div class="panel-heading">
+		    <h3 class="panel-title">Panel success</h3>
+		  </div>
+		  <div class="panel-body">
+			    <table class="table table-striped table-hover">
+				<tr>
+					<td class="lead">Email:</td>
+					<td class="lead"><?php echo $_SESSION["ID"];?></td>
+				</tr>
+				<tr>
+					<td class="lead">Name:</td>
+					<td class="lead"><?php echo $_SESSION["NAME"];?></td>
+				</tr>
+				<tr>
+					<td class="lead">Correct:</td>
+					<td class="lead"><?php echo $cor;?></td>
+				</tr>
+				<tr>
+					<td class="lead">Wrong:</td>
+					<td class="lead"><?php echo $wrng;?></td>
+				</tr>
+				<tr>
+					<td class="lead">Total:</td>
+					<td class="lead"><?php echo $cor;?></td>
+				</tr>
+			  </table>
+		  </div>
+		</div>
+	</div>
+
+		
 	</body>
 	<script>
 	history.pushState(null, null, document.URL);
